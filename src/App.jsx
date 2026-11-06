@@ -13,6 +13,15 @@ function createMediaItems(prefix, count, label, type = "image") {
   }));
 }
 
+function createMediaItemsFromFiles(fileNames, label) {
+  return fileNames.map((fileName, index) => ({
+    type: "image",
+    src: `${import.meta.env.BASE_URL}${fileName}`,
+    label: `${label} ${index + 1}`,
+    alt: `${label} ${index + 1}`,
+  }));
+}
+
 const skills = [
   {
     id: "redes-sociales",
@@ -50,15 +59,38 @@ const skills = [
     media: createMediaItems("retra", 6, "Fotografía de retrato"),
   },
   {
-    id: "branding",
+    id: "rebranding-fibro-arte",
     number: "06",
-    title: "Branding",
-    description: "Identidad visual · Sistema de marca",
-    media: createMediaItems("bran", 13, "Aplicación de identidad"),
+    title: "Rebranding Fibro Arte",
+    description: "Rebranding · Identidad visual",
+    media: createMediaItemsFromFiles(
+      ["bran1.png", "bran2.png", "bran3.png", "bran4.png", "bran5.png"],
+      "Rebranding Fibro Arte",
+    ),
+  },
+  {
+    id: "rebranding-mbaeteko",
+    number: "07",
+    title: "Rebranding Mbaeteko",
+    description: "Rebranding · Identidad visual",
+    media: createMediaItemsFromFiles(
+      [
+        "bran6.0.png",
+        "bran6.png",
+        "bran7.png",
+        "bran8.png",
+        "bran9.png",
+        "bran10.png",
+        "bran11.png",
+        "bran12.png",
+        "bran13.png",
+      ],
+      "Rebranding Mbaeteko",
+    ),
   },
   {
     id: "senaletica",
-    number: "07",
+    number: "08",
     title: "Diseño de señalética",
     description: "Sistemas de orientación · Identidad espacial",
     media: createMediaItems("sen", 5, "Diseño de señalética"),

@@ -68,7 +68,7 @@ button {
   justify-content: flex-end;
   border-bottom: 1px solid var(--line);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 0.06em;
 }
 
@@ -97,7 +97,7 @@ button {
 .eyebrow,
 .scroll-link {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.08em;
 }
 
@@ -204,7 +204,7 @@ button {
 .section-aside {
   margin: 0 0 6px;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .project-list {
@@ -267,7 +267,7 @@ button {
 .project-card-description {
   color: var(--muted);
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.06em;
 }
 
@@ -306,7 +306,7 @@ button {
   align-items: flex-start;
   gap: 10px;
   padding-bottom: 8px;
-  font-size: clamp(17px, 2.2vw, 24px);
+  font-size: clamp(18px, 2.2vw, 25px);
   font-style: normal;
   letter-spacing: -0.04em;
 }
@@ -363,7 +363,7 @@ button {
   margin: 12px 0 0;
   color: var(--muted);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.04em;
 }
 
@@ -462,7 +462,7 @@ button {
 .placeholder-note {
   position: absolute;
   font-family: var(--mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.1em;
 }
 
@@ -484,13 +484,13 @@ button {
   padding-left: 3px;
   border: 1px solid rgb(0 0 0 / 70%);
   border-radius: 50%;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .gallery-note {
   color: var(--muted);
   font-family: var(--mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.04em;
 }
 
@@ -558,7 +558,7 @@ button {
 
   .eyebrow,
   .scroll-link {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .scroll-link {
@@ -595,7 +595,7 @@ button {
   .project-card-description {
     grid-column: 2;
     grid-row: 2;
-    font-size: 9px;
+    font-size: 11px;
   }
 
   .project-open {
