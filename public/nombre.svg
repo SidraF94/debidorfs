@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title">
+  <title id="title">Tu Nombre — reemplazar por el SVG animado final</title>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; font-size: 238px; font-weight: 700; letter-spacing: -18px; fill: #ff5b43; }
+    .outline { fill: none; stroke: #24231f; stroke-width: 1.5; stroke-dasharray: 1200; stroke-dashoffset: 1200; animation: draw 3s ease-in-out infinite alternate; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) { .outline { animation: none; stroke-dashoffset: 0; } }
+  </style>
+  <text x="50%" y="64%" text-anchor="middle" textLength="1100" lengthAdjust="spacingAndGlyphs">TU NOMBRE</text>
+  <text class="outline" x="50%" y="64%" text-anchor="middle" textLength="1100" lengthAdjust="spacingAndGlyphs">TU NOMBRE</text>
+</svg>
