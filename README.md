@@ -9,12 +9,17 @@ npm ci
 npm run dev
 ```
 
-## GitHub Pages
+## Despliegue en Vercel
 
-El sitio está configurado para el repositorio `SidraF94/DebiPortfolio` y se publica
-automáticamente al hacer push a `main`.
+Importá el repositorio privado `SidraF94/DebiPortfolio` desde Vercel. La
+configuración del proyecto es:
 
-En GitHub, abrí **Settings → Pages** y elegí **GitHub Actions** como fuente de
-despliegue. Una vez que termine el workflow, el sitio estará en:
+- Framework Preset: **Vite**
+- Build Command: `npm run build`
+- Output Directory: `dist`
+- Install Command: `npm ci`
+- Root Directory: `./`
 
-https://sidraf94.github.io/DebiPortfolio/
+Después del primer despliegue, Vercel publicará automáticamente los cambios
+que se suban a `main`. El repositorio puede seguir siendo privado; el sitio
+publicado será accesible para quienes tengan su enlace.
